@@ -1,0 +1,56 @@
+.LodgementHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.LodgementTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+  /* or 51px */
+  display: flex;
+  align-items: flex-end;
+  color: #ff6060;
+}
+.LodgementLocation {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* identical to box height, or 26px */
+  display: flex;
+  align-items: flex-end;
+  color: #ff6060;
+}
+.LodgementTags {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.LodgementHost {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.LodgementHostName {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* or 26px */
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ff6060;
+  width: min-content;
+}
+.LodgementHostImage {
+  width: 64px;
+  height: 64px;
+  background: #c4c4c4;
+  border-radius: 50%;
+}

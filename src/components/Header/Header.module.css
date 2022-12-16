@@ -1,0 +1,25 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 100px;
+}
+.NavContainer {
+  display: flex;
+  gap: 100px;
+}
+.NavLink {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  /* or 34px */
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ff6060;
+}
+.Active {
+  text-decoration-line: underline;
+}

@@ -1,0 +1,12 @@
+.Tag {
+  padding: 5px;
+  background: #ff6060;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  text-align: center;
+  color: #ffffff;
+}

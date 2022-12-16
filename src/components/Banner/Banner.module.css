@@ -1,0 +1,16 @@
+.Banner {
+  height: 223px;
+  border-radius: 25px;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.BannerText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 223px;
+  color: #ffffff;
+}

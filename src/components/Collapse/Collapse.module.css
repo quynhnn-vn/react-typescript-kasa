@@ -1,0 +1,39 @@
+.CollapseHeader {
+  background: #ff6060;
+  border-radius: 5px;
+  height: 47px;
+  line-height: 47px;
+  padding: 0 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.CollapseTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  /* or 34px */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.CollapseArrow {
+  width: 15px;
+  transition: all 0.5s ease;
+}
+.UpArrow {
+  transform: rotate(180deg);
+}
+.CollapseContent {
+  background: #f7f7f7;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142.6%;
+  /* or 34px */
+  color: #ff6060;
+  padding: 18px;
+}

@@ -1,0 +1,9 @@
+.Collection {
+  background: #f7f7f7;
+  border-radius: 25px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: calc((100% - 340px * 3) / 2);
+}
