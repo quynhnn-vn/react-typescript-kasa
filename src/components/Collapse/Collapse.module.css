@@ -36,4 +36,5 @@
   /* or 34px */
   color: #ff6060;
   padding: 18px;
+  height: calc(100% - 83px);
 }

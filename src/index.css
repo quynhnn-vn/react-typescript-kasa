@@ -25,3 +25,14 @@ main {
   gap: 30px;
   margin: 40px 100px;
 }
+
+ul {
+  list-style: none;
+  margin: unset;
+  padding: unset;
+}
+
+button {
+  background-color: unset;
+  border: unset;
+}

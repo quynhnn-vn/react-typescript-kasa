@@ -17,7 +17,11 @@ export default function Qualities() {
   ) : (
     <section className={styles.Qualities}>
       {qualities?.map((quality) => (
-        <Collapse key={quality.title} quality={quality} />
+        <Collapse
+          key={quality.title}
+          title={quality.title}
+          content={quality.content}
+        />
       ))}
     </section>
   );

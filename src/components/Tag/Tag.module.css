@@ -1,5 +1,6 @@
 .Tag {
   padding: 5px;
+  min-width: 115px;
   background: #ff6060;
   border-radius: 10px;
   font-family: "Montserrat";

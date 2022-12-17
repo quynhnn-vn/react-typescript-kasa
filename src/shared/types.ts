@@ -31,11 +31,12 @@ export type QualityType = {
 };
 
 export type CollapseProps = {
-  quality: QualityType;
+  title: string;
+  content: ReactNode;
 };
 
 export type CarouselProps = {
-  children: ReactNode;
+  pictures: string[];
 };
 
 export type TagProps = {
