@@ -5,7 +5,7 @@ import styles from "./CollectionItem.module.css";
 export default function CollectionItem(props: CollectionItemProps) {
   const { lodgement } = props;
   return (
-    <NavLink to={`/lodgement/${lodgement.id}`}>
+    <NavLink to={`/lodgements/${lodgement.id}`}>
       <div
         className={styles.CollectionItem}
         style={{

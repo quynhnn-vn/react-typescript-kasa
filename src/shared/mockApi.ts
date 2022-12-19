@@ -21,6 +21,8 @@ export const getLodgementById = (
     const matchedLodgement = lodgements.find((item) => item.id === lodgementId);
     if (matchedLodgement) {
       setTimeout(() => res(matchedLodgement), 500);
+    } else {
+      rej("Not found");
     }
   });
 };

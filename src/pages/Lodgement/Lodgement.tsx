@@ -22,8 +22,8 @@ export default function Lodgement() {
         .then((res) => {
           if (res) {
             setLodgement(res);
-            setLoading(false);
           }
+          setLoading(false);
         })
         .catch((error) => {
           setLoading(false);
