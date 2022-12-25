@@ -6,6 +6,7 @@
   padding: 0 18px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .CollapseTitle {
   font-family: "Montserrat";
@@ -37,4 +38,9 @@
   color: #ff6060;
   padding: 18px;
   height: calc(100% - 83px);
+}
+@media only screen and (max-width: 768px) {
+  .CollapseContent {
+    font-size: 12px;
+  }
 }

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .ErrorTitle {
@@ -13,7 +14,6 @@
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #ff6060;
 }
 
@@ -40,4 +40,16 @@
   text-decoration-line: underline;
 
   color: #ff6060;
+}
+@media only screen and (max-width: 768px) {
+  .Error {
+    height: 100vh;
+  }
+  .ErrorTitle {
+    font-size: 96px;
+  }
+  .ErrorText {
+    font-size: 18px;
+    text-align: center;
+  }
 }

@@ -6,4 +6,16 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: calc((100% - 340px * 3) / 2);
+  row-gap: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .Collection {
+    padding: unset;
+    width: 100%;
+    background: transparent;
+    row-gap: 10px;
+  }
+  .Collection > a {
+    width: 100%;
+  }
 }

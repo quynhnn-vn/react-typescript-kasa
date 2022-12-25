@@ -3,6 +3,10 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.LodgementTitleLocation {
+  display: flex;
+  flex-direction: column;
+}
 .LodgementTitle {
   font-family: "Montserrat";
   font-style: normal;
@@ -22,17 +26,22 @@
   line-height: 142.6%;
   display: flex;
   align-items: flex-end;
+  margin-top: 10px;
   color: #ff6060;
 }
 .LodgementTags {
+  margin-top: 20px;
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .LodgementHost {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
 }
 .LodgementHostName {
   font-family: "Montserrat";
@@ -47,6 +56,11 @@
   color: #ff6060;
   width: min-content;
 }
+.LodgementNameImage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .LodgementHostImage {
   width: 64px;
   height: 64px;
@@ -60,4 +74,27 @@
 }
 .LodgementContent > div {
   flex: 1;
+}
+@media only screen and (max-width: 768px) {
+  .LodgementHeader {
+    flex-direction: column;
+    width: 100%;
+  }
+  .LodgementTitle {
+    font-size: 18px;
+  }
+  .LodgementLocation {
+    font-size: 14px;
+  }
+  .LodgementHost {
+    width: 100%;
+    flex-flow: row-reverse;
+  }
+  .LodgementHostName {
+    font-size: 12px;
+  }
+  .LodgementContent {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

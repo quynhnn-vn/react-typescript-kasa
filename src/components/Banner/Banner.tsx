@@ -15,7 +15,10 @@ export default function Banner(props: BannerProps) {
         backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), url('${bannerSource}')`,
       }}
     >
-      <h2 className={styles.BannerText}>Chez vous, partout et ailleurs</h2>
+      <h2 className={styles.BannerText}>
+        <span>Chez vous,</span>
+        <span>partout et ailleurs</span>
+      </h2>
     </section>
   );
 }

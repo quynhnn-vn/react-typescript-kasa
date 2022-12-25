@@ -4,3 +4,8 @@
   gap: 30px;
   margin: 0 100px;
 }
+@media only screen and (max-width: 768px) {
+  .Qualities {
+    margin: 0;
+  }
+}

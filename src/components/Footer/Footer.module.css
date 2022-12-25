@@ -1,7 +1,12 @@
 .Footer {
   text-align: center;
   background-color: #000000;
-  padding: 66px 0 29px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+  width: 100%;
 }
 .FooterText {
   font-family: "Montserrat";
@@ -13,4 +18,9 @@
   text-align: center;
   color: #ffffff;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .FooterText {
+    font-size: 12px;
+  }
 }

@@ -49,26 +49,26 @@ export default function Lodgement() {
     <main>
       <Carousel pictures={lodgement.pictures} />
       <section className={styles.LodgementHeader}>
-        <div>
+        <div className={styles.LodgementTitleLocation}>
           <h1 className={styles.LodgementTitle}>{lodgement.title}</h1>
           <h3 className={styles.LodgementLocation}>{lodgement.location}</h3>
+          <div className={styles.LodgementTags}>
+            {lodgement.tags.map((tag) => (
+              <Tag key={tag} tag={tag} />
+            ))}
+          </div>
         </div>
         <div className={styles.LodgementHost}>
-          <h2 className={styles.LodgementHostName}>{lodgement.host.name}</h2>
-          <img
-            className={styles.LodgementHostImage}
-            src={lodgement.host.picture}
-            alt={lodgement.host.name}
-          />
+          <div className={styles.LodgementNameImage}>
+            <h2 className={styles.LodgementHostName}>{lodgement.host.name}</h2>
+            <img
+              className={styles.LodgementHostImage}
+              src={lodgement.host.picture}
+              alt={lodgement.host.name}
+            />
+          </div>
+          <Rating rate={lodgement.rating} />
         </div>
-      </section>
-      <section className={styles.LodgementHeader}>
-        <div className={styles.LodgementTags}>
-          {lodgement.tags.map((tag) => (
-            <Tag key={tag} tag={tag} />
-          ))}
-        </div>
-        <Rating rate={lodgement.rating} />
       </section>
       <section className={styles.LodgementContent}>
         <Collapse title="Description" content={lodgement.description} />
