@@ -62,9 +62,11 @@ export default function Carousel(props: CarouselProps) {
 
   return (
     <div className={styles.Carousel}>
-      <button className={styles.LeftButton} onClick={previousSlide}>
-        <img src={arrowLeft} alt="arrow-left" />
-      </button>
+      {pictures.length > 1 && (
+        <button className={styles.LeftButton} onClick={previousSlide}>
+          <img src={arrowLeft} alt="arrow-left" />
+        </button>
+      )}
       <div
         className={styles.CarouselSlider}
         style={{
@@ -85,9 +87,11 @@ export default function Carousel(props: CarouselProps) {
       <div className={styles.CarouselIndex}>
         {slideNumber + 1}/{pictures.length}
       </div>
-      <button className={styles.RightButton} onClick={nextSlide}>
-        <img src={arrowLeft} alt="arrow-left" />
-      </button>
+      {pictures.length > 1 && (
+        <button className={styles.RightButton} onClick={nextSlide}>
+          <img src={arrowLeft} alt="arrow-left" />
+        </button>
+      )}
     </div>
   );
 }

@@ -35,7 +35,7 @@ export default function Lodgement() {
     return (
       <ul>
         {equipments.map((item) => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     );

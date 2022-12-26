@@ -32,6 +32,7 @@
   z-index: 1;
   top: calc(50% - 40px);
   left: 25px;
+  cursor: pointer;
 }
 .RightButton {
   position: absolute;
@@ -39,6 +40,7 @@
   top: calc(50% - 40px);
   right: 25px;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 .CarouselIndex {
   position: absolute;

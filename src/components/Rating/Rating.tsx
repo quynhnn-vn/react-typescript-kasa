@@ -9,12 +9,12 @@ export default function Rating(props: RatingProps) {
 
   return (
     <div className={styles.Rating}>
-      {[...Array(roundRate)].map((i) => {
-        return <img key={i} src={redStar} alt="red-star" />;
-      })}
-      {[...Array(5 - roundRate)].map((i) => {
-        return <img key={i} src={whiteStar} alt="white-star" />;
-      })}
+      {Array.from(Array(roundRate).keys()).map((i) => (
+        <img key={`red-${i}`} src={redStar} alt="red-star" />
+      ))}
+      {Array.from(Array(5 - roundRate).keys()).map((j) => (
+        <img key={`white-${j}`} src={whiteStar} alt="white-star" />
+      ))}
     </div>
   );
 }
