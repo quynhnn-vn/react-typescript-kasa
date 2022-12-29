@@ -3,9 +3,9 @@
 ## About
 This project using ReactJs, React Router and TypeScript, including the following routes:
 
-/: Home page
-/about: About page
-/lodgements/${id}: Lodgement page
+`/: Home page`
+`/about: About page`
+`/lodgements/${id}: Lodgement page`
 
 ## Getting Started
 You can clone this project and run :
